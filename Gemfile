@@ -10,8 +10,6 @@ end
 
 platforms :ruby do
   gem 'mysql2', '~> 0.3.11'
-  gem 'pg', '>= 0.9.0'
-  gem 'sqlite3'
   gem 'therubyracer'
 end
 
@@ -45,4 +43,8 @@ group :test do
   gem 'mocha', :require => false
   gem 'webrat'
   gem 'database_cleaner'
+end
+
+group :production do
+  gem 'unicorn'
 end
